@@ -32,6 +32,112 @@
 				height: 250px;
 				border-radius: 50%;
 			}
+			* {
+  box-sizing: border-box;
+}
+
+		/* Style the body */
+		body {
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 0;
+		}
+
+		/* Header/logo Title */
+		.header {
+		padding: 80px;
+		text-align: center;
+		background: #1abc9c;
+		color: white;
+		}
+
+		/* Increase the font size of the heading */
+		.header h1 {
+		font-size: 40px;
+		}
+
+		/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+		.navbar {
+		overflow: hidden;
+		background-color: #333;
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0;
+		}
+
+		/* Style the navigation bar links */
+		.navbar a {
+		float: left;
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 20px;
+		text-decoration: none;
+		}
+
+
+		/* Right-aligned link */
+		.navbar a.right {
+		float: right;
+		}
+
+		/* Change color on hover */
+		.navbar a:hover {
+		background-color: #ddd;
+		color: black;
+		}
+
+		/* Active/current link */
+		.navbar a.active {
+		background-color: #666;
+		color: white;
+		}
+
+		/* Column container */
+		.row {  
+		display: -ms-flexbox; /* IE10 */
+		display: flex;
+		-ms-flex-wrap: wrap; /* IE10 */
+		flex-wrap: wrap;
+		}
+
+		/* Create two unequal columns that sits next to each other */
+		/* Sidebar/left column */
+		.side {
+		-ms-flex: 30%; /* IE10 */
+		flex: 30%;
+		background-color: #f1f1f1;
+		padding: 20px;
+		}
+
+		/* Main column */
+		.main {   
+		-ms-flex: 70%; /* IE10 */
+		flex: 70%;
+		background-color: white;
+		padding: 20px;
+		}
+
+		/* Fake image, just for this example */
+		.fakeimg {
+		background-color: #aaa;
+		width: 100%;
+		padding: 20px;
+		}
+
+		/* Footer */
+		.footer {
+		padding: 20px;
+		text-align: center;
+		background: #ddd;
+		}
+
+		/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 700px) {
+		.row {   
+			flex-direction: column;
+		}
+		}
+
 		</style>
 
 		<meta charset="utf-8">
@@ -206,7 +312,7 @@
 
 									<i class='fas fa-quote-left' style='font-size:24px'></i>
 									<p>
-										<h3>Code can't lie Comments can!</h3>
+										<h3>Code can't lie, Comments can!</h3>
 									</p>
 									<i class='fas fa-quote-right' style='font-size:24px' ></i>
 									<br>
@@ -531,252 +637,65 @@
 					<div class='section-block portfolio-block' >
 						
 						<div class='container-fluid' >
-							
-							
-							<div class='section-header' >
-								<h2>My <strong class='color' >Works</strong></h2>
-							</div>
-							
-							<ul class='portfolio-items' >
-								
-								<li data-groups='["web","tech"]' >
-									<div class='inner' >
-										<img src='https://dl.dropboxusercontent.com/s/i2wx5vcde16laaz/water.png?dl=0' alt>
+							<div class='v-align' >
+								<div class='inner' >
+									<div class='intro-text' >
 										
-										<div class='overlay' >
-											
-											<a href='#popup-1' class='view-project' >
-												View Project
-											</a>
-											
-											<!--project popup-->
-											<div id='popup-1' class='popup-box zoom-anim-dialog mfp-hide' >
-												<figure>
-													
-													<!--project popup image-->
-													<img src='https://dl.dropboxusercontent.com/s/i2wx5vcde16laaz/water.png?dl=0' alt>
-												
-												</figure>
-												<div class='content' >
-													
-													<!--project popup title-->
-													<h4>Water Level Indicator</h4>
-													
-													<!--project popup description-->
-													<p>
-														A real-time water level Indicator using Arduino and Ultrasonic sensor. 
-Created dynamic web page to monitor the water-level using Node JS through Azure server. 
-Displayed real-time data on the web page developed using HTML, CSS, Bootstrap and JavaScript. 
-													</p>
-													
-												</div>
-												
-											</div>
+										<div class='section-header' >
+								
+											<h2>My <strong class='color' >Works</strong></h2>
 											
 										</div>
+
+							  
+									<div class="row">
+										<div class="main">
+										<h2>PiHole</h2>
+										<h5>Title description, Dec 7, 2017</h5>
+										<div class="fakeimg" style="height:200px;">Image</div>
+										<p>Some text..</p>
+										<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+										<br>
+
+										<h2>#100 Days of Leetcode</h2>
+										<h5>Title description, Sep 2, 2017</h5>
+										<div class="fakeimg" style="height:200px;">Image</div>
+										<p>sometext...</p>
+										<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 										
+										<h2>Social places</h2>
+										<h5>Title description, Dec 7, 2017</h5>
+										<div class="fakeimg" style="height:200px;">Image</div>
+										<p>Some text..</p>
+										<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+										<br>
+
+										<h2>Superstore-Dashboard</h2>
+										<h5>Title description, Dec 7, 2017</h5>
+										<div class="fakeimg" style="height:200px;">Image</div>
+										<p>Some text..</p>
+										<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+										<br>
+
+										<h2>Intrusion Signature Detection System in IoT.</h2>
+										<h5>Title description, Sep 2, 2017</h5>
+										<div class="fakeimg" style="height:200px;">Image</div>
+										<p>Some text..</p>
+										<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+										<h2>Iris Recognition Attendance Management System.</h2>
+										<h5>A Study on Data Anonymization for Privacy-Preserving Data Publishing.</h5>
+										<div class="fakeimg" style="height:200px;">Image</div>
+										<p>Some text..</p>
+										<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+										<br>
+										<h2>Water management and prediction of water levels in tanks</h2>
+										<h5>Title description, Sep 2, 2017</h5>
+										<div class="fakeimg" style="height:200px;">Image</div>
+										<p>Some text..</p>
+										<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 									</div>
-								</li>
-								
-								<li data-groups='["tech","photography"]' >
-									<div class='inner' >
-										<img src='https://dl.dropboxusercontent.com/s/xrayfhandqmy3uv/intruder.png?dl=0' alt>
-										
-										<div class='overlay' >
-											
-											<a href='#popup-2' class='view-project' >
-												View Project
-											</a>
-											
-											<!--project popup-->
-											<div id='popup-2' class='popup-box zoom-anim-dialog mfp-hide' >
-												<figure>
-													
-													<!--project popup image-->
-													<img src='https://dl.dropboxusercontent.com/s/xrayfhandqmy3uv/intruder.png?dl=0' alt>
-												
-												</figure>
-												<div class='content' >
-													
-													<!--project popup title-->
-													<h4>Intrusion Detection System in IoT</h4>
-													
-													<!--project popup description-->
-													<p>
-														 Developed a real time intruder detector system which can detect the intruder in packet transmission. 
- Capable of providing results like attack type, IP address of the intrusion in wide public area network 
-also provides the crucial details like reliability status, packets priority, protocol version in network layer
-													</p>
-													
-												</div>
-												
-											</div>
-											
-										</div>
-										
-									</div>
-								</li>
-								
-								<li data-groups='["web","photography"]' >
-									<div class='inner' >
-										<img src='https://dl.dropboxusercontent.com/s/ovak60od26uccyj/Data.jpg?dl=0' alt>
-										
-										<div class='overlay' >
-											
-											<a href='#popup-3' class='view-project' >
-												View Project
-											</a>
-											
-											<!--project popup-->
-											<div id='popup-3' class='popup-box zoom-anim-dialog mfp-hide' >
-												<figure>
-													
-													<!--project popup image-->
-													<img src='https://dl.dropboxusercontent.com/s/ovak60od26uccyj/Data.jpg?dl=0' alt>
-												
-												</figure>
-												<div class='content' >
-													
-													<!--project popup title-->
-													<h4>A Study on Data Anonymization for Privacy – Preserving Data Publishing </h4>
-													
-													<!--project popup description-->
-													<p>
-														demonstrate that l-diversity has various limitations. In particular, it is neither essential nor sufficient to
-prevent attribute disclosure. Motivated by these limitations, we propose another notion of protection called
-&quot;closeness.&quot; We present the base model t-closeness, which necessitates that the distribution of a multiple
-sensitive attribute in any equivalence class is close to the distribution of the attribute in the overall table (i.e., the
-distance between the two distributions should be close to a threshold t).
-													</p>
-													
-												</div>
-												
-											</div>
-											
-										</div>
-										
-									</div>
-								</li>
-								
-								
-								<li data-groups='["web"]' >
-									<div class='inner' >
-										<img src='https://dl.dropboxusercontent.com/s/vc9xzqhw3bon0fx/and.jpg?dl=0' alt>
-										
-										<div class='overlay' >
-											
-											<a href='#popup-4' class='view-project' >
-												View Project
-											</a>
-											
-											<!--project popup-->
-											<div id='popup-4' class='popup-box zoom-anim-dialog mfp-hide' >
-												<figure>
-													
-													<!--project popup image-->
-													<img src='https://dl.dropboxusercontent.com/s/vc9xzqhw3bon0fx/and.jpg?dl=0' alt>
-												
-												</figure>
-												<div class='content' >
-													
-													<!--project popup title-->
-													<h4>Android App Development</h4>
-													
-													<!--project popup description-->
-													<p>
-														explored each and every bit of it. The user friendly apps in the Android engaged me to know more about it.
-This made me to attend a workshop conducted by IIT Bombay on Android App Development to get hands-on experience 
-with the application development.
-													</p>
-													
-												</div>
-												
-											</div>
-											
-										</div>
-										
-									</div>
-								</li>
-								
-								<li data-groups='["tech"]' >
-									<div class='inner' >
-										<img src='https://dl.dropboxusercontent.com/s/kbndv2kvwcp471p/iris.png?dl=0' alt>
-										
-										<div class='overlay' >
-											
-											<a href='#popup-5' class='view-project' >
-												View Project
-											</a>
-											
-											<!--project popup-->
-											<div id='popup-5' class='popup-box zoom-anim-dialog mfp-hide' >
-												<figure>
-													
-													<!--project popup image-->
-													<img src='https://dl.dropboxusercontent.com/s/kbndv2kvwcp471p/iris.png?dl=0' alt>
-												
-												</figure>
-												<div class='content' >
-													
-													<!--project popup title-->
-													<h4>Iris Recognition Based Attendance Management System </h4>
-													
-													<!--project popup description-->
-													<p>
-														a software for data accusation, processing, iris localizing and adjusting, matching and storing data using MATLAB and Casia Database.
-													</p>
-													
-												</div>
-												
-											</div>
-											
-										</div>
-										
-									</div>
-								</li>
-								
-								<li data-groups='["photography"]' >
-									<div class='inner' >
-										<img src='https://dl.dropboxusercontent.com/s/h7jvfjranx412c6/bigdata.png?dl=0' alt>
-										
-										<div class='overlay' >
-											
-											<a href='#popup-6' class='view-project' >
-												View Project
-											</a>
-											
-											<!--project popup-->
-											<div id='popup-6' class='popup-box zoom-anim-dialog mfp-hide' >
-												<figure>
-													
-													<!--project popup image-->
-													<img src='https://dl.dropboxusercontent.com/s/h7jvfjranx412c6/bigdata.png?dl=0' alt>
-												
-												</figure>
-												<div class='content' >
-													
-													<!--project popup title-->
-													<h4>IBM CE – Essentials of big data with Hadoop using IBM infosphere Biginsights & Big Data Programming </h4>
-													
-													<!--project popup description-->
-													<p>
-														attended the IBM Software training course on the Essentials of Big data with Hadoop using 
-IBM Infosphere Biginsights technology.This course enthralled me about the power of the data
-and how the data we generate on the real-time can be used to enhance our daily lives with faster,
-more personalized experiences. 
-													</p>
-													
-												</div>
-												
-											</div>
-											
-										</div>
-										
-									</div>
-								</li>
-								
-							</ul>
-							
+							  </div>
+
 						</div>
 					
 					</div>
