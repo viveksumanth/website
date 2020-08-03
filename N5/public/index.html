@@ -3,19 +3,28 @@
 	<head>
 		<style>
 			.fa {
-			padding: 20px;
-			font-size: 100px;
-			width: 100px;
+			padding: 21px;
+			font-size: 15px;
+			width: 50px;
 			text-align: center;
-			margin: 5px 2px;
-			border-radius: 50%;
+			margin: 5px 3px;
+			text-decoration: none;
 			}
 			.fa-linkedin {
-			color: white;
+			color: #007bb5;
 			}
 			.fa-github {
+			color: black;
 			
-			color: white;
+			}
+
+			.fa-quote-right {
+				padding: 10px;
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				right: 175px;
+				top: 90px;
 			}
 			.avatar {
 				vertical-align: middle;
@@ -23,7 +32,8 @@
 				height: 250px;
 				border-radius: 50%;
 			}
-			</style>
+		</style>
+
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,7 +42,7 @@
 		
 		
 		<title>Vivek sumanth blog</title>
-		
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 		
 		<!--=====================================================
 			CSS Stylesheets
@@ -44,7 +54,9 @@
 		<link rel='stylesheet' type='text/css' href='css/magnific-popup.css' >
 		<link rel='stylesheet' type='text/css' href='css/style.css' >
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
 	</head>
+
 	<body >
 		
 		
@@ -73,7 +85,7 @@
 			<!--=====================================================
 				Menu Button
 			=====================================================-->
-			<a href='#' class='menu-btn' >
+			<a href='#about' class='menu-btn' >
 				<span class='lines' >
 					<span class='l1' ></span>
 					<span class='l2' ></span>
@@ -85,16 +97,16 @@
 			<!--=====================================================
 				Menu
 			=====================================================-->
-			<div class='menu' >
+			<div class='menu'>
 				<div class='inner' >
 					<ul class='menu-items' >
 						
-						<li>
+						<!-- <li>
 							<a href='#' class='section-toggle' data-section='intro' >
 								Home
 							</a>
 						</li>
-						
+						 -->
 						<li>
 							<a href='#about' class='section-toggle' data-section='about' >
 								About
@@ -109,14 +121,14 @@
 						
 						<li>
 							<a href='#portfolio' class='section-toggle' data-section='portfolio' >
-								Portfolio
+								My Works
 							</a>
 						</li>
 						<li>
-								<a href='#' class='section-toggle' data-section='Hobbies' >
-									hobbies
-								</a>
-							</li>
+						<a href='#' class='section-toggle' data-section='Hobbies' >
+							Blogs
+						</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -133,7 +145,7 @@
 					Main Section
 				=====================================================-->
 				
-				<section id='intro' class='section section-main active' onclick="window.location.href='#about'">
+				<!-- <section id='intro' class='section section-main active' >
 
 	
 					<div class='container-fluid' >
@@ -145,22 +157,17 @@
 									<h1>I'm Vivek Sumanth</h1>
 									
 									<p>
-										I strongly believe that the future belongs to the curious-who challanges it, pokes it, questions it and turns it inside out.
+										Code can't lie Comments can !
+
 									</p>
 									
 									<div class='intro-btns' >
 										
 										<a href='#about' class='btn-custom section-toggle' data-section='about' >
 											Discover More
-										</a>
-										
-										<div class="split right">
-											<div class="centered">
-												<a href="https://www.linkedin.com/in/chvivek/" class="fa fa-linkedin"></a>
-												<a href="https://github.com/VivekSumanth" class="fa fa-github"></a>
 
-			
 									</div>
+
 								</div> 
 										
 									</div>
@@ -171,35 +178,40 @@
 						</div>
 						
 					</div>
-				
-				</section>
+				</section> -->
 				
 				
 				<!--=====================================================
 					About Section
 				=====================================================-->
-				<section id='about' class='section about-section border-d' >
+				<section id='about' class='section section-main active' >
 					
 					<div class='section-block about-block' >
 						<div class='container-fluid' >
 							
 							<div class='section-header' >
+								
 								<h2>
 									I'm a <strong class='color' >Computer Science Graduate</strong>
+									
 								</h2>
 							</div>
-							
 							<div class='row' >
 								
-								<div class='col-md-4' >
-									<img src="./img/portfolio/DSC_3051.png" alt="Avatar" class="avatar">
+								<div class='col-md-5' >
+									
 									<ul class='info-list' >
+										<img src="./img/portfolio/DSC_3051.png" alt="Avatar" class="avatar">
+										<li>
 										
+										<a href="https://www.linkedin.com/in/chvivek/"  target="_blank" class="fa fa-linkedin fa-2x"></a>
+										<a href="https://github.com/VivekSumanth"  target="_blank" class="fa fa-github fa-2x"></a>
+										<a href="mailto:viveksumanth97@gmail.com"><i style="font-size:28px" class="fa">&#xf0e0;</i></a>
+										</li>
 										<li>
 											<strong>Name:</strong>
 											<span>Vivek Sumanth Chintakula </span>
 										</li>
-										
 										<li>
 											<strong>Degree :</strong>
 											<span>Masters</span>
@@ -219,54 +231,47 @@
 											<strong>Citizenship:</strong>
 											<span>Indian</span>
 										</li>
-										
-										
+
 										
 									</ul>
 									
 								</div>
-								
-								<div class='col-md-8' >
-								
-									<div class='about-text' >
-										<p>
-											<b>A person who never made a mistake never tried anything new - Albert Einstein</b><br>
-										</p>
-										   
-										<p>
-											Syntax errors, run-time errors were the common errors which panicked me when I was defenseless
-												though they panicked me they continuously motivated me to learn something new every day. 
-												I Vivek Sumanth and I make err’s often but never leave them without scrutinizing 
-												arduously the cause behind and I can overtly state that my err’s are my eye openers 
-												they let me try every possible path and give me a experience and profound knowledge of the path.
-												<br>Technology is an integral and important part of my life. Like most I use technology such as computers 
-and the Internet to complete schoolwork, projects, and to conduct research.Technology helps to speed up the 
-learning process for students like myself because it creates a more efficient learning environment in many ways.
 
-But technology is also an important part of my life for reasons other than just education.
-Technology is also important to me for communication purposes. Moving six hundred miles away from home as a ten-year-old is 
-certainly a daunting experience, but with cell phones and built-in video cameras on computers,my family and friends are just a click away. 
-For all these reasons technology is invaluable to me and without it, my life would unquestionably be very different.
-While my own life is affected by technology,
-I want to be an epitome of technology and create an impact in real life.</b>
+								<br>
+								<div class='col-md-1'></div>
 
-										</p>
-										
-									</div>
-									
+								<div class='col-md-6' >
+
+									<i class='fas fa-quote-left' style='font-size:24px'></i>
+									<p>
+										<h3>Code can't lie Comments can!</h3>
+									</p>
+									<i class='fas fa-quote-right' style='font-size:24px' ></i>
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
+	
 									<div class='about-btns' >
 										
-										<a href='https://dl.dropboxusercontent.com/s/qi2youje527g0bs/resume.pdf?dl=0' class='btn-custom btn-color' >
+										<a href='./img/portfolio/vivek.pdf' target="_blank" class='btn-custom btn-color' >
 											Download Resume
 										</a>
-										
-										
-										
+
 									</div>
 									
-								</div>
+
+								</div> 
+
 								
 							</div>
+
 							
 						</div>
 					</div>
@@ -619,7 +624,6 @@ I want to be an epitome of technology and create an impact in real life.</b>
 					
 				</section>
 				
-				
 				<!--=====================================================
 					Portfolio Section
 				=====================================================-->
@@ -633,25 +637,6 @@ I want to be an epitome of technology and create an impact in real life.</b>
 							<div class='section-header' >
 								<h2>My <strong class='color' >Works</strong></h2>
 							</div>
-							
-							<ul class='portfolio-filters' >
-								<li>
-									<a href='#' class='active' data-group='all' >
-										All
-									</a>
-								</li>
-								<li>
-									<a href='#' data-group='web' >
-										Professional
-									</a>
-								</li>
-								<li>
-									<a href='#' data-group='tech' >
-										Academic
-									</a>
-								</li>
-								
-							</ul>
 							
 							<ul class='portfolio-items' >
 								
@@ -892,29 +877,6 @@ more personalized experiences.
 								</li>
 								
 							</ul>
-							
-						</div>
-					
-					</div>
-					
-				</section>
-				
-				
-			
-										
-										
-										
-										
-									</div>
-									
-									
-									
-								</div>
-								
-								
-							</div>
-							
-							
 							
 						</div>
 					
