@@ -362,14 +362,14 @@ body.section-switching .animation-block{
 	z-index:199;
 }
 body.section-switching.down .animation-block{
-	-webkit-animation: anim-down 2.5s cubic-bezier(.785,.135,.15,.86);
-	-moz-animation: anim-down 2.5s cubic-bezier(.785,.135,.15,.86);
-	animation: anim-down 2.5s cubic-bezier(.785,.135,.15,.86);
+	-webkit-animation: anim-down 2s cubic-bezier(.785,.135,.15,.86);
+	-moz-animation: anim-down 2s cubic-bezier(.785,.135,.15,.86);
+	animation: anim-down 2s cubic-bezier(.785,.135,.15,.86);
 }
 body.section-switching.up .animation-block{
-	-webkit-animation: anim-up 2.5s cubic-bezier(.785,.135,.15,.86);
-	-moz-animation: anim-up 2.5s cubic-bezier(.785,.135,.15,.86);
-	animation: anim-up 2.5s cubic-bezier(.785,.135,.15,.86);
+	-webkit-animation: anim-up 2s cubic-bezier(.785,.135,.15,.86);
+	-moz-animation: anim-up 2s cubic-bezier(.785,.135,.15,.86);
+	animation: anim-up 2s cubic-bezier(.785,.135,.15,.86);
 }
 @-webkit-keyframes anim-down{
 	0%{
@@ -523,6 +523,9 @@ body.section-switching.up .animation-block{
 =======================================================*/
 .about-section{
 	background:#ffffff;
+	background-repeat: no-repeat;
+	background-size: auto;
+	
 }
 .about-block .section-header{
 	margin-bottom:80px;
