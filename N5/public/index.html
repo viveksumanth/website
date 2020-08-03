@@ -32,9 +32,16 @@
 				height: 250px;
 				border-radius: 50%;
 			}
+			.projects {
+				vertical-align: middle;
+				width: auto;
+				height: 250px;
+				
+
+			}
 			* {
-  box-sizing: border-box;
-}
+				box-sizing: border-box;
+				}
 
 		/* Style the body */
 		body {
@@ -119,8 +126,9 @@
 
 		/* Fake image, just for this example */
 		.fakeimg {
-		background-color: #aaa;
+		background-color: rgb(255, 255, 255);
 		width: 100%;
+		height:1250px;
 		padding: 20px;
 		}
 
@@ -137,6 +145,11 @@
 			flex-direction: column;
 		}
 		}
+		ul.b {
+			margin: 0;
+			list-style-type: square;
+    		float: left;
+			}
 
 		</style>
 
@@ -170,9 +183,9 @@
 			Preloader
 		=====================================================-->
 		<div id='preloader' >
-			<div class='loader' ></div>
-			<div class='left' ></div>
-			<div class='right' ></div>
+			<div class='loader'></div>
+			<div class='left'></div>
+			<div class='right'></div>
 		</div>
 		
 		
@@ -181,10 +194,10 @@
 			<!--=====================================================
 				Page Borders
 			=====================================================-->
-			<div class='page-border border-left' ></div>
-			<div class='page-border border-right' ></div>
-			<div class='page-border border-top' ></div>
-			<div class='page-border border-bottom' ></div>
+			<div class='page-border border-left'></div>
+			<div class='page-border border-right'></div>
+			<div class='page-border border-top'></div> 
+			<div class='page-border border-bottom'></div>
 			
 			
 			
@@ -207,21 +220,15 @@
 				<div class='inner' >
 					<ul class='menu-items' >
 						
-						<!-- <li>
-							<a href='#' class='section-toggle' data-section='intro' >
-								Home
-							</a>
-						</li>
-						 -->
 						<li>
-							<a href='#about' class='section-toggle' data-section='about' >
-								About
+							<a href='#' class='section-toggle' data-section='about' >
+								Vivek Sumanth
 							</a>
 						</li>
 						
 						<li>
 							<a href='#resume' class='section-toggle' data-section='resume' >
-								Resume
+								Time Line
 							</a>
 						</li>
 						
@@ -306,8 +313,9 @@
 								</div>
 
 								<br>
-								<div class='col-md-1'></div>
+								<div class='col-md-1'>
 
+								</div>
 								<div class='col-md-6' >
 
 									<i class='fas fa-quote-left' style='font-size:24px'></i>
@@ -319,19 +327,35 @@
 									<br>
 									<br>
 									<br>
-									<br>
-									<br>
-									<br>
-									<br>
-									<br>
-									<br>
 	
-									<div class='about-btns' >
+									<div class='intro-btns' >
 										
-										<a href='./img/portfolio/vivek.pdf' target="_blank" class='btn-custom btn-color' >
+
+										<a href='./img/portfolio/vivek.pdf' target="_blank" class='btn-custom section-toggle' data-section='about' >
 											Resume
 										</a>
-
+										<a href='#resume' class='btn-custom section-toggle' data-section='resume' >
+											TimeLine
+										</a>
+										<a href='#portfolio' class='btn-custom section-toggle' data-section='portfolio' >
+											My works
+										</a>
+										<br>
+										<hr>
+										<p>
+											
+											<br>
+											An essay is, generally, a piece of writing that gives the author's own argument — but the definition is vague, overlapping with those of a paper, an article, a pamphlet,
+											 and a short story. Essays have traditionally been sub-classified as formal and informal. Formal essays are characterized by "serious purpose, dignity, logical organization, 
+											 length," whereas the informal essay is characterized by "the personal element (self-revelation, individual tastes and experiences, confidential manner), humor, graceful style, 
+											 rambling structure, unconventionality or novelty of theme," etc.[1]
+											 An essay is, generally, a piece of writing that gives the author's own argument — but the definition is vague, overlapping with those of a paper, an article, a pamphlet, and 
+											 a short story. Essays have traditionally been sub-classified as formal and informal. Formal essays are characterized by "serious purpose, dignity, logical organization, length," whereas
+											the informal essay is characterized by "the personal element (self-revelation, individual tastes and experiences, confidential manner), humor, graceful style, rambling structure, 
+											unconventionality or novelty of theme," etc.[1]
+											a short story. Essays have traditionally been sub-classified as formal and informal. Formal essays are characterized by "serious purpose, dignity, logical organization, length," whereas 
+											the informal essay is characterized by "the personal element (self-revelation, individual tastes and experiences, confidential manner), humor, graceful style, rambling structure, unconventionality or novelty of theme," etc.[1]
+										</p>
 									</div>
 									
 
@@ -531,8 +555,18 @@
 							<div class='section-header' >
 								
 								<h2>My <strong class='color' >Education</strong></h2>
+								<br><br>
+
+
+								<a href='#about' class='btn-custom section-toggle' data-section='about' >
+									Home
+								</a>
+								<a href='#portfolio' class='btn-custom section-toggle' data-section='portfolio' >
+									My works
+								</a>
 								
-							</div>
+								</div>
+							
 							
 							<ul class='timeline' >
 								<li>
@@ -647,52 +681,222 @@
 											
 										</div>
 
+										<a href='#about' class='btn-custom section-toggle' data-section='about' >
+											Home
+										</a>
+										<a href='#resume' class='btn-custom section-toggle' data-section='resume' >
+											TimeLine
+										</a>
 							  
 									<div class="row">
 										<div class="main">
 										<h2>PiHole</h2>
 										<h5>Title description, Dec 7, 2017</h5>
-										<div class="fakeimg" style="height:200px;">Image</div>
+
+										<div class="fakeimg" style="height:300px;"><img src="./img/portfolio/Pi-hole_Logo.png" alt="pihole" class="projects"></div>
+										<ul class="b">
+											<li>Coffee</li>
+											<li>Tea</li>
+											<li>Coca Cola</li>
+										  </ul>
+										  <br>
+										  <br>
+										  <br>
 										<p>Some text..</p>
 										<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-										<br>
 
+										<div class='about-btns' >
+
+											<a href='#' target="_blank" class='btn-custom btn-color' >
+												View More
+											</a>
+											<a href='https://github.com/VivekSumanth/Pihole-docker' target="_blank" class='btn-custom btn-color' >
+												Explore
+											</a>
+	
+										</div>
+										<br>
+										<hr>
+										<br>
 										<h2>#100 Days of Leetcode</h2>
 										<h5>Title description, Sep 2, 2017</h5>
-										<div class="fakeimg" style="height:200px;">Image</div>
+										<div class="fakeimg" style="height:300px;"><img src="./img/portfolio/1_aLEReyihZv-VHmnAjCbQxg.jpeg" alt="leetcode" class="projects"></div>
+										<ul class="b">
+											<li>Coffee</li>
+											<li>Tea</li>
+											<li>Coca Cola</li>
+										  </ul>
+										  <br>
+										  <br>
+										  <br>
 										<p>sometext...</p>
 										<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 										
+										<div class='about-btns' >
+										
+											<a href='#' target="_blank" class='btn-custom btn-color' >
+												View More
+											</a>
+											<a href='https://github.com/VivekSumanth/Code-Everyday' target="_blank" class='btn-custom btn-color' >
+												Explore
+											</a>
+											<br>
+											<hr>
+											<br>
+
 										<h2>Social places</h2>
 										<h5>Title description, Dec 7, 2017</h5>
-										<div class="fakeimg" style="height:200px;">Image</div>
+										<div class="fakeimg" style="height:300px;"><img src="./img/portfolio/11070841_649954758483951_4881650306907859805_o.png" alt="leetcode" class="projects"></div>
+										<ul class="b">
+											<li>Coffee</li>
+											<li>Tea</li>
+											<li>Coca Cola</li>
+										  </ul>
+										  <br>
+										  <br>
+										  <br>
 										<p>Some text..</p>
 										<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-										<br>
+										<div class='about-btns' >
 
+											<a href='#' target="_blank" class='btn-custom btn-color' >
+												View More
+											</a>
+											<a href='https://github.com/VivekSumanth/restaurants-and-social-places' target="_blank" class='btn-custom btn-color' >
+												Explore
+											</a>
+
+										</div>
+										<br>
+										<hr>
+										<br>
 										<h2>Superstore-Dashboard</h2>
 										<h5>Title description, Dec 7, 2017</h5>
-										<div class="fakeimg" style="height:200px;">Image</div>
+										<div class="fakeimg" style="height:300px;"><img src="./img/portfolio/Screen Shot 2020-05-04 at 5.19.09 PM.png" alt="leetcode" class="projects"></div>
+										<ul class="b">
+											<li>Coffee</li>
+											<li>Tea</li>
+											<li>Coca Cola</li>
+										  </ul>
+										  <br>
+										  <br>
+										  <br>
 										<p>Some text..</p>
 										<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+										<div class='about-btns' >
+										
+											<a href='#' target="_blank" class='btn-custom btn-color' >
+												View More
+											</a>
+											<a href='https://github.com/VivekSumanth/superstore-dashboard' target="_blank" class='btn-custom btn-color' >
+												Explore
+											</a>
+	
+										</div>
 										<br>
-
+										<hr>
+										<br>
 										<h2>Intrusion Signature Detection System in IoT.</h2>
 										<h5>Title description, Sep 2, 2017</h5>
-										<div class="fakeimg" style="height:200px;">Image</div>
+										<div class="fakeimg" style="height:300px;"><img src="./img/portfolio/IDS.png" alt="leetcode" class="projects"></div>
+										<ul class="b">
+											<li>Coffee</li>
+											<li>Tea</li>
+											<li>Coca Cola</li>
+										  </ul>
+										  <br>
+										  <br>
+										  <br>
 										<p>Some text..</p>
 										<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+										<!-- <div class='about-btns' >
+										
+											<a href='#' target="_blank" class='btn-custom btn-color' >
+												View More
+											</a>
+											<a href='#' target="_blank" class='btn-custom btn-color' >
+												Explore
+											</a>
+	
+										</div> -->
+										<br>
+										<hr>
+										<br>
+										<h2>A Study on Data Anonymization for Privacy-Preserving Data Publishing</h2>
+										<h5>datee.</h5>
+										<div class="fakeimg" style="height:300px;"><img src="./img/portfolio/Data anonymizationHeader.jpg" alt="leetcode" class="projects"></div>
+										<ul class="b">
+											<li>Coffee</li>
+											<li>Tea</li>
+											<li>Coca Cola</li>
+										  </ul>
+										  <br>
+										  <br>
+										  <br>
+										<p>Some text..</p>
+										<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+										<div class='about-btns' >
+										
+											<a href='#' target="_blank" class='btn-custom btn-color' >
+												View More
+											</a>
+											<a href='#' target="_blank" class='btn-custom btn-color' >
+												Explore
+											</a>
+
+										</div>
+										<br>
+										<hr>
+										<br>
 										<h2>Iris Recognition Attendance Management System.</h2>
-										<h5>A Study on Data Anonymization for Privacy-Preserving Data Publishing.</h5>
-										<div class="fakeimg" style="height:200px;">Image</div>
+										<h5>datee.</h5>
+										<div class="fakeimg" style="height:300px;"><img src="./img/portfolio/irisrecognitionsystem.jpg" alt="leetcode" class="projects"></div>
+										<ul class="b">
+											<li>Coffee</li>
+											<li>Tea</li>
+											<li>Coca Cola</li>
+										  </ul>
+										  <br>
+										  <br>
+										  <br>
 										<p>Some text..</p>
 										<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+										<!-- <div class='about-btns' >
+										
+											<a href='#' target="_blank" class='btn-custom btn-color' >
+												View More
+											</a>
+											<a href='#' target="_blank" class='btn-custom btn-color' >
+												Explore
+											</a>
+	
+										</div> -->
+										<br>
+										<hr>
 										<br>
 										<h2>Water management and prediction of water levels in tanks</h2>
 										<h5>Title description, Sep 2, 2017</h5>
-										<div class="fakeimg" style="height:200px;">Image</div>
+										<div class="fakeimg" style="height:300px;"><img src="./img/portfolio/ultrasonic-sensor-with-arduino-hc-sr04.jpg" alt="leetcode" class="projects"></div>
+										<ul class="b">
+											<li>Coffee</li>
+											<li>Tea</li>
+											<li>Coca Cola</li>
+										  </ul>
+										  <br>
+										  <br>
+										  <br>
 										<p>Some text..</p>
 										<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+										<div class='about-btns' >
+										
+											<a href='#' target="_blank" class='btn-custom btn-color' >
+												View More
+											</a>
+											<a href='#' target="_blank" class='btn-custom btn-color' >
+												Explore
+											</a>
+	
+										</div>
 									</div>
 							  </div>
 
@@ -701,6 +905,7 @@
 					</div>
 					
 				</section>
+
 			
 				<!--=====================================================
 					Main Section

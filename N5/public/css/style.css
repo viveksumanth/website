@@ -1,8 +1,5 @@
 /*=======================================================
 	
-	Item	: 	N5 - Minimal Resume/CV & vCard Template
-	
-	Author	: 	Noman Ali Samejo
 	
 --------------------------------------------------------------------------------------
 	List Of Contents
@@ -83,6 +80,7 @@ img{
 	color:rgb(8, 8, 8);
 	margin:6px 0;
 	
+	
 }
 .menu{
 	color:rgb(8, 8, 8);
@@ -96,7 +94,7 @@ img{
 	-webkit-transition:width .3s cubic-bezier(.785,.135,.15,.86);
 	-moz-transition:width .3s cubic-bezier(.785,.135,.15,.86);
 	transition:width .3s cubic-bezier(.785,.135,.15,.86);
-	overflow:hidden;
+	
 }
 .menu:hover,
 .menu-btn:hover + .menu{
@@ -224,6 +222,7 @@ body.border-dark .main-content > .page-border{
 .section-block{
 	padding:110px;
 	padding-top:0;
+	content: ' ';
 }
 body.section-switching .main-content:before,
 body.section-switching .main-content:after{
@@ -232,6 +231,8 @@ body.section-switching .main-content:after{
 body.border-dark .main-content:before,
 body.border-dark .main-content:after{
 	border-color:#303F9F;
+
+	
 }
 .sections{
 	height:100%;
@@ -286,7 +287,7 @@ body.border-dark .main-content:after{
 	margin:0 15px;
 }
 a.btn-custom{
-	color:#FFF;
+	color:rgb(6, 5, 5);
 	text-decoration:none;
 }
 .btn-custom{
@@ -1112,121 +1113,9 @@ body.section-switching.up .animation-block{
 	padding:28px !important;
 	overflow:auto;
 }
-.popup-box{
-	background:#FFF;
-	max-width:450px;
-	margin:0 auto;
-	position:relative;
-	-webkit-box-shadow: 0 0 0 4px #FFF;
-	-moz-box-shadow: 0 0 0 4px #FFF;
-	box-shadow: 0 0 0 4px #FFF;
-}
-.popup-box > .mfp-close{
-	top:2px;
-	right:2px;
-	background:#FFF;
-	height:48px;
-	width:48px;
-	opacity:1;
-	font-size:26px;
-}
-.popup-box > .mfp-close:hover{
-	background:#FAFAFA;
-}
-.popup-box > .content{
-	padding:20px;
-}
-.popup-box > .content > h4{
-	text-transform:uppercase;
-	letter-spacing:2px;
-	font-weight:bold;
-	font-size:20px;
-}
-.popup-box > .content > p{
-	font-size:14px;
-	color:rgba(0,0,0,.45);
-	font-weight:500;
-}
 
 
-/*=======================================================
-	Contact Section
-=======================================================*/
-.contact-block .section-header{
-	margin-bottom:80px;
-}
-.contact-form > .form-group:last-of-type{
-	margin:0;
-}
-.alert{
-	border-radius:0;
-	padding:17px;
-	border:solid 1px;
-	color:#FFF;
-	background:transparent;
-}
-.alert.alert-success{
-	border-color:#66bb6a; 
-	color:#66bb6a; 
-}
-.alert.alert-danger{
-	border-color:#ef5350;
-	color:#ef5350;
-}
-.form-group{
-	margin-bottom:20px;
-}
-.form-control{
-	padding:14px;
-	height:auto;
-	border-radius:0;
-	-webkit-box-shadow:none !important;
-	-moz-box-shadow:none !important;
-	box-shadow:none !important;
-	border:solid 1px rgba(0,0,0,.1);
-	background:transparent;
-	-webkit-transition:none;
-	-moz-transition:none;
-	transition:none;
-}
-.form-control:focus{
-	border-color:#303F9F;
-}
-.contact-form .btn-custom{
-	padding:19px 35px;
-}
-.contact-info{
-	margin-bottom:25px;
-}
-.contact-info:before,
-.contact-info:after{
-	content: ' ';
-	display:table;
-}
-.contact-info:after{
-	clear:both;
-}
-.contact-info > i{
-	width:60px;
-	display:block;
-	float:left;
-	font-size:52px;
-	color:#303F9F;
-}
-.contact-info > p{
-	float:left;
-	font-size:16px;
-	line-height:1.6em;
-	font-style:italic;
-	color:rgba(0,0,0,.4);
-	margin:0;
-	margin-top:5px;
-}
-@media(min-width:992px){
-	.contact-info-icons{
-		padding-left:30px;
-	}
-}
+
 
 
 
@@ -1357,6 +1246,7 @@ body.loaded #preloader .loader{
 @media(max-width:992px){
 	.info-list{
 		margin-bottom:25px;
+		
 	}
 	.p-table,
 	.service{
