@@ -94,7 +94,7 @@ img{
 	-webkit-transition:width .3s cubic-bezier(.785,.135,.15,.86);
 	-moz-transition:width .3s cubic-bezier(.785,.135,.15,.86);
 	transition:width .3s cubic-bezier(.785,.135,.15,.86);
-	
+	overflow:hidden;
 }
 .menu:hover,
 .menu-btn:hover + .menu{
@@ -222,7 +222,6 @@ body.border-dark .main-content > .page-border{
 .section-block{
 	padding:110px;
 	padding-top:0;
-	content: ' ';
 }
 body.section-switching .main-content:before,
 body.section-switching .main-content:after{
@@ -231,7 +230,7 @@ body.section-switching .main-content:after{
 body.border-dark .main-content:before,
 body.border-dark .main-content:after{
 	border-color:#303F9F;
-
+	content: ' ';
 	
 }
 .sections{
