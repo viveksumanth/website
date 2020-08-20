@@ -142,7 +142,7 @@ img{
 .menu-items > li > a:hover{
 	color:#FFF;
 }
-.main-content > .page-border{
+/* .main-content > .page-border{
 	position:absolute;
 	border:solid 1px rgb(17, 17, 17);
 	border-color:rgba(12, 12, 12, 0.4);
@@ -177,7 +177,7 @@ body.border-dark .main-content > .page-border{
 }
 .main-content > .border-left{
 	left:14px;
-}
+} */
 
 
 /*=======================================================
@@ -281,6 +281,7 @@ body.border-dark .main-content:after{
 }
 .intro-text > .intro-btns{
 	margin-top:45px;
+	
 }
 .intro-text > .intro-btns > .btn-custom{
 	margin:0 15px;
